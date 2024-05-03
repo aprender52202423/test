@@ -1,0 +1,142 @@
+/*
+Theme Name: SpanishCojugation.net Theme
+Theme URI: http://www.spanishconjugation.net
+Description: SpanishConjugation.net Theme
+Author: SpanishConjugation.net
+Author URI: http://www.spanishconjugation.net
+Template: ifeaturepro5
+Version: 1.0.0
+*/
+
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+
+/* Specific styling for conjugation site (translation, table cells)  */
+.verb-pronoun, .verb-regular, .verb-normal, .verb-irregular, .verb-orto, .verb-notused {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 20px;
+	height: 40px;	
+}
+.verb-pronoun {
+	font-weight: normal;
+	background: #E2E2E2;
+}
+.verb-regular, .verb-normal, .verb-irregular, .verb-orto, .verb-notused  {
+	font-weight: bold;
+    color: black;
+} 
+.verb-irregular, .verb-orto, .verb-notused  {
+	font-style: italic;
+} 
+.verb-irregular {
+	background-color: #ABBDF2;
+}
+.verb-orto {
+	background-color: #FFE47A;
+}
+.verb-notused {
+	background-color: #FF3300;
+}
+.verb-translation, .conjugation-chart {
+	color: #999999;
+	font-style: italic;
+	margin: 0;
+}
+table.verb-table  {
+        margin: 2px 0 0 0;
+		padding: 0;
+		width: 100%;
+
+}
+td.verb-pronoun {
+        width: 35%
+}
+td.verb-entry {
+        width: 65%
+}
+td.key-entry {
+         width: 50%
+}
+tr.verb-table {
+	border: 1px solid #cccccc;
+}
+
+.conjugation-content {
+	margin: 0;
+	padding: 0px 20px 20px;
+}
+
+
+/* Styling to override specific iFeature Pro theme items */
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0px;
+}
+li {
+	list-style-position: outside;
+}
+li.usage {
+	margin: 15px 0;
+}
+#sidebar .widget-container {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+}
+#sidebar .widget-container p {
+	padding: 0;
+}
+
+/* Logo: Make Logo Repsonsive */
+@media only screen and (max-width: 979px) {
+	#logo {
+		width: 100px;
+		height: 60px;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	#logo {
+		width: 83px;
+		height: 50px;  
+	}
+	#header_section, .hide-on-phone {
+		display: none;
+	} 
+}
+
+/* Remove dropdown menu for mobile */
+@media screen and (max-width:979px){
+.dropdown-menu li {
+    display: none;
+	}
+}
+
+
+/*Banner ad Header - widget*/
+ #cc-header .bannerAid{
+ 	text-align: right;
+ 	/*padding: 5px 0px;*/
+ }
+ @media all and (max-width: 979px){
+ 	#cc-header .bannerAid{
+	 	position: relative;
+	    right: -10px;
+	}
+ }
+ @media all and (min-width: 767px) and (max-width: 978px){
+ 	#cc-header .bannerAid{
+	 	margin: 5px auto;
+	 	position: relative;
+	 	right:auto !important;
+	 	text-align: center !important;
+	}
+ }
+ #cc-header .bannerAid .new_header_banner_aid{
+ 	/*max-width: 720px;*/
+ 	/*text-align: right;*/
+ 	/*float: right;*/
+ }
